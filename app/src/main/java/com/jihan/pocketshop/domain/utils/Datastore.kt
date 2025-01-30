@@ -41,11 +41,11 @@ object Datastore : SettingsModel(
 ) {
 
     val themeKey by stringPref(ThemeDefault.KEY)
-    val isDarkMode by boolPref(false)
     val dynamic by boolPref(false)
     val showThemeLabel by boolPref(false)
     val baseTheme by enumPref(ComposeTheme.BaseTheme.System)
     val language by intPref(0)
+    val token by nullableStringPref()
 
 
 }

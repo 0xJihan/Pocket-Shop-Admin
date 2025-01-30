@@ -22,4 +22,10 @@ class LanguageViewmodel : ViewModel() {
         Datastore.language.update(language)
         }
     }
+
+    fun updateToken(token: String) {
+        viewModelScope.launch {
+            Datastore.token.update(token)
+        }
+    }
 }
